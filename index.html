@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="description" content="Sweet Crumbs by Felicia Solics Enterprise — cakes, meat pies, snacks and drinks in Bonny Island, Rivers State."><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Felicia Solics Enterprise</title>
+<style>
+:root{--brown:#7b351f;--cream:#fff8f2;--gold:#f4b860;--ink:#241713;--muted:#786963;--white:#fff;--green:#0ca678}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,system-ui,Arial,sans-serif;background:var(--cream);color:var(--ink);line-height:1.5}
+header{position:sticky;top:0;z-index:30;background:#fffdfbde;backdrop-filter:blur(12px);border-bottom:1px solid #eaded7}
+.nav{max-width:1180px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:900;font-size:1.25rem;color:var(--brown);white-space:nowrap}.links{display:flex;gap:24px}.links a{text-decoration:none;color:var(--ink);font-weight:700}.cart{border:0;background:var(--brown);color:#fff;border-radius:999px;padding:11px 17px;font-weight:800;cursor:pointer}
+.hero{background:linear-gradient(125deg,#fff0df,#ffd6b5);overflow:hidden}.hero-inner{max-width:1180px;margin:auto;min-height:600px;padding:70px 20px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:40px}.eyebrow{display:inline-block;background:#fff7;border:1px solid #fff;padding:7px 12px;border-radius:99px;font-weight:800;color:var(--brown);margin-bottom:18px}.hero h1{font-size:clamp(2.7rem,7vw,5.8rem);line-height:.94;letter-spacing:-3px;margin-bottom:22px}.hero h1 span{color:var(--brown)}.hero p{font-size:1.1rem;color:#5d4942;max-width:600px;margin-bottom:28px}.btn{display:inline-block;border:0;border-radius:14px;padding:14px 20px;font-weight:900;text-decoration:none;cursor:pointer}.btn-primary{background:var(--brown);color:#fff}.hero-card{background:#ffffff80;border:1px solid #fff;padding:35px;border-radius:35px;text-align:center;box-shadow:0 20px 60px #7b351f18}.hero-food{font-size:9rem;filter:drop-shadow(0 20px 18px #7b351f25)}
+section{max-width:1180px;margin:auto;padding:75px 20px}.heading{text-align:center;margin-bottom:38px}.heading h2{font-size:2.2rem}.heading p{color:var(--muted);margin-top:5px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.product{background:#fff;border:1px solid #eaded7;border-radius:22px;padding:15px;box-shadow:0 10px 30px #4d2c1b0d}.pic{height:175px;border-radius:17px;background:#fff1e5;display:flex;align-items:center;justify-content:center;font-size:6rem}.product h3{margin:16px 4px 5px}.product p{color:var(--muted);font-size:.92rem;min-height:44px;margin:0 4px}.row{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:15px 4px 4px}.price{font-weight:900;color:var(--brown)}.add{border:0;background:#f5e3d7;color:var(--brown);padding:9px 12px;border-radius:11px;font-weight:900;cursor:pointer}.offer{max-width:none;background:var(--brown);color:#fff}.offer-inner{max-width:1180px;margin:auto;padding:55px 20px;display:flex;justify-content:space-between;align-items:center;gap:25px}.offer p{color:#f4ded3;margin-top:6px}.offer .btn{background:#fff;color:var(--brown)}.about{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about p{color:var(--muted);margin-top:12px}.features{display:grid;grid-template-columns:1fr 1fr;gap:15px}.feature{background:#fff;border:1px solid #eaded7;border-radius:18px;padding:20px;font-weight:800}.checkout-box{max-width:800px;margin:auto;background:#fff;border:1px solid #eaded7;border-radius:25px;padding:25px;box-shadow:0 15px 40px #4d2c1b10}.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field input,.field textarea{border:1px solid #dccdc5;border-radius:12px;padding:13px;font:inherit;outline:none}.field input:focus,.field textarea:focus{border-color:var(--brown)}.pay-buttons{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}.pay{border:0;border-radius:12px;padding:14px;font-weight:900;cursor:pointer}.paystack{background:var(--green);color:#fff}.whatsapp{background:#25d366;color:#fff}.contact{text-align:center}.contact-card{background:#fff;border:1px solid #eaded7;border-radius:20px;padding:25px;max-width:650px;margin:auto}.contact-card p{color:var(--muted);margin:7px}
+footer{background:#21120d;color:#eaded7;text-align:center;padding:28px 20px}.cart-panel{position:fixed;right:18px;bottom:18px;width:min(410px,calc(100% - 36px));max-height:75vh;overflow:auto;background:#fff;z-index:50;border-radius:22px;padding:22px;box-shadow:0 20px 70px #0004;display:none;border:1px solid #eaded7}.cart-panel.open{display:block}.cart-top{display:flex;justify-content:space-between;align-items:center}.x{border:0;border-radius:50%;width:30px;height:30px;cursor:pointer}.cart-item{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eee;padding:12px 0}.qty{display:flex;align-items:center;gap:7px}.qty button{border:0;background:#f1e7e1;width:26px;height:26px;border-radius:7px;cursor:pointer}.total{display:flex;justify-content:space-between;font-weight:900;font-size:1.1rem;padding:17px 0}.cart-empty{padding:25px 0;color:var(--muted);text-align:center}
+.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,20px);background:#241713;color:#fff;padding:12px 17px;border-radius:12px;opacity:0;pointer-events:none;transition:.25s;z-index:100}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.hero-inner{grid-template-columns:1fr;text-align:center}.hero p{margin-left:auto;margin-right:auto}.hero-card{max-width:480px;margin:auto}.about{grid-template-columns:1fr}.offer-inner{flex-direction:column;text-align:center}}
+@media(max-width:620px){.links{display:none}.grid{grid-template-columns:1fr}.fields,.pay-buttons{grid-template-columns:1fr}.field.full{grid-column:auto}.hero-inner{padding-top:50px}.hero-food{font-size:7rem}.offer-inner{padding:45px 20px}section{padding:55px 15px}}
+</style>
+</head>
+<body>
+<header><nav class="nav">
+<div class="logo"><img src="logo.png" alt="Felicia Solics Enterprise logo" style="height:42px;width:42px;object-fit:cover;border-radius:50%;vertical-align:middle;margin-right:8px">Felicia Solics Enterprise</div>
+<div class="links"><a href="#home">Home</a><a href="#menu">Menu</a><a href="#about">About</a><a href="#checkout">Checkout</a><a href="#contact">Contact</a></div>
+<button class="cart" onclick="toggleCart()">🛒 Cart <span id="count">0</span></button>
+</nav></header>
+
+<main>
+<section class="hero" id="home"><div class="hero-inner">
+<div><div class="eyebrow">Freshly baked • Made with love</div><h1>Cakes, snacks & <span>happy moments.</span></h1><p>Order delicious cakes, golden meat pies and chilled drinks for birthdays, parties, meetings or just because you deserve a treat.</p><a class="btn btn-primary" href="#menu">Shop the menu →</a></div>
+<div class="hero-card"><div class="hero-food">🎂🥟🥤</div><h3>Fresh every day</h3><p>Quality treats at friendly prices.</p></div>
+</div></section>
+
+<section id="menu"><div class="heading"><h2>Our Menu</h2><p>Pick your favourites and add them to your cart.</p></div><div class="grid" id="products"></div></section>
+
+<div class="offer"><div class="offer-inner"><div><h2>🥟 Meat Pie — Only ₦500</h2><p>Golden, tasty and perfect for a quick snack.</p></div><a class="btn" href="#menu">Order now</a></div></div>
+
+<section id="about"><div class="about"><div><div class="heading" style="text-align:left;margin-bottom:0"><h2>Made for every celebration.</h2><p>Felicia Solics Enterprise brings together cakes, pastries and refreshing drinks in one simple online shop.</p></div><p>Whether you're buying one meat pie or preparing for a birthday, choose your items, review your cart and checkout easily.</p></div><div class="features"><div class="feature">✨ Freshly baked</div><div class="feature">💰 Fair prices</div><div class="feature">📱 Easy ordering</div><div class="feature">🎉 Party orders</div></div></div></section>
+
+<section id="checkout"><div class="heading"><h2>Checkout</h2><p>Enter your details, then choose your payment method.</p></div><div class="checkout-box">
+<div class="fields"><label class="field"><span>Full name</span><input id="name" placeholder="Your name"></label><label class="field"><span>Phone</span><input id="phone" placeholder="080..."></label><label class="field"><span>Email</span><input id="email" type="email" placeholder="you@example.com"></label><label class="field"><span>Delivery address</span><input id="address" placeholder="Address"></label><label class="field full"><span>Order note</span><textarea id="note" rows="3" placeholder="Optional note"></textarea></label></div>
+<div class="pay-buttons"><button class="pay paystack" onclick="payWithPaystack()">💳 Pay by Card</button><button class="pay whatsapp" onclick="sendWhatsApp()">📱 WhatsApp Order</button></div>
+<p style="font-size:.82rem;color:#87756e;margin-top:13px">Card checkout is prepared for Paystack. Replace the test public key in the code with your own Paystack public key before accepting real payments.</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="heading"><h2>Contact us</h2><p>We'd love to prepare something delicious for you.</p></div><div class="contact-card"><p>📞 WhatsApp: +234 808 856 2471</p><p>📍 Bonny Island, Rivers State</p><p>🕘 Mon–Sat: 8:00 AM – 7:00 PM</p></div></section>
+</main>
+
+<footer>© 2026 Felicia Solics Enterprise • Quality products, made for you.</footer>
+
+<div class="cart-panel" id="cartPanel"><div class="cart-top"><h3>Your Cart 🛒</h3><button class="x" onclick="toggleCart()">×</button></div><div id="cartItems"></div><div class="total"><span>Total</span><span>₦<span id="total">0</span></span></div><button class="btn btn-primary" style="width:100%" onclick="document.querySelector('#checkout').scrollIntoView();toggleCart()">Continue to checkout</button></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const products=[
+{name:"Chocolate Cake",price:8000,emoji:"🍫🎂",desc:"Rich, soft chocolate cake."},
+{name:"Vanilla Cake",price:7000,emoji:"🍰",desc:"Soft vanilla cake with a sweet finish."},
+{name:"Birthday Cake",price:12000,emoji:"🎂",desc:"Celebration cake for special moments."},
+{name:"Meat Pie",price:500,emoji:"🥟",desc:"Golden and tasty — only ₦500."},
+{name:"Chicken Pie",price:700,emoji:"🥧",desc:"Crispy pastry with tasty chicken filling."},
+{name:"Coke",price:500,emoji:"🥤",desc:"Chilled Coca-Cola."},
+{name:"Fanta",price:500,emoji:"🧃",desc:"Chilled Fanta."},
+{name:"Sprite",price:500,emoji:"🥤",desc:"Chilled Sprite."},
+{name:"Bottled Water",price:300,emoji:"💧",desc:"Cold bottled water."},
+{name:"Cupcake",price:1000,emoji:"🧁",desc:"Soft and tasty cupcake."},
+{name:"Doughnut",price:500,emoji:"🍩",desc:"Fresh, fluffy doughnut."},
+{name:"Sausage Roll",price:500,emoji:"🌭",desc:"Crispy pastry with sausage filling."}
+];
+let cart=[];
+const money=n=>new Intl.NumberFormat("en-NG").format(n);
+document.getElementById("products").innerHTML=products.map((p,i)=>`<article class="product"><div class="pic">${p.emoji}</div><h3>${p.name}</h3><p>${p.desc}</p><div class="row"><span class="price">₦${money(p.price)}</span><button class="add" onclick="add(${i})">Add</button></div></article>`).join("");
+function add(i){let x=cart.find(v=>v.name===products[i].name);x?x.qty++:cart.push({...products[i],qty:1});render();toast(products[i].name+" added to cart");}
+function change(i,d){cart[i].qty+=d;if(cart[i].qty<=0)cart.splice(i,1);render();}
+function render(){
+document.getElementById("count").textContent=cart.reduce((a,x)=>a+x.qty,0);
+let box=document.getElementById("cartItems");
+box.innerHTML=cart.length?cart.map((x,i)=>`<div class="cart-item"><div><b>${x.name}</b><br><small>₦${money(x.price)} each</small></div><div class="qty"><button onclick="change(${i},-1)">−</button><b>${x.qty}</b><button onclick="change(${i},1)">+</button></div></div>`).join(""):'<div class="cart-empty">Your cart is empty.</div>';
+document.getElementById("total").textContent=money(cart.reduce((a,x)=>a+x.price*x.qty,0));
+}
+function toggleCart(){document.getElementById("cartPanel").classList.toggle("open")}
+function toast(t){let e=document.getElementById("toast");e.textContent=t;e.classList.add("show");setTimeout(()=>e.classList.remove("show"),1600)}
+function details(){return {name:document.getElementById("name").value.trim(),phone:document.getElementById("phone").value.trim(),email:document.getElementById("email").value.trim(),address:document.getElementById("address").value.trim(),note:document.getElementById("note").value.trim()}}
+function orderText(){
+let d=details(),items=cart.map(x=>`${x.name} x${x.qty} = ₦${money(x.price*x.qty)}`).join("\n"),total=cart.reduce((a,x)=>a+x.price*x.qty,0);
+return `Hello Felicia Solics Enterprise! I want to order:\n\n${items}\n\nTotal: ₦${money(total)}\n\nName: ${d.name}\nPhone: ${d.phone}\nAddress: ${d.address}\nNote: ${d.note||"None"}`;
+}
+function sendWhatsApp(){if(!cart.length)return toast("Add an item first");window.open("https://wa.me/2348088562471?text="+encodeURIComponent(orderText()),"_blank")}
+function payWithPaystack(){
+if(!cart.length)return toast("Add an item first");
+let d=details();if(!d.name||!d.email||!d.phone)return toast("Enter name, email and phone");
+toast("Connect your Paystack public key to activate payment");
+alert("Paystack setup: replace PAYSTACK_PUBLIC_KEY in the code and load the Paystack inline script. For real payments, initialize and verify transactions on a secure backend—never expose your secret key in this page.");
+}
+render();
+</script>
+</body></html>
